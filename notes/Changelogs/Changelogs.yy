@@ -3,8 +3,8 @@
   "%Name":"Changelogs",
   "name":"Changelogs",
   "parent":{
-    "name":"Harmony Framework Plus",
-    "path":"Harmony Framework Plus.yyp",
+    "name":"My cool game of awesome",
+    "path":"My cool game of awesome.yyp",
   },
   "resourceType":"GMNotes",
   "resourceVersion":"2.0",

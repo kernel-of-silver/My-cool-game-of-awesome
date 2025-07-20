@@ -1,6 +1,6 @@
 {
   "$GMProject":"v1",
-  "%Name":"Harmony Framework Plus",
+  "%Name":"My cool game of awesome",
   "AudioGroups":[
     {"$GMAudioGroup":"v1","%Name":"audiogroup_default","exportDir":"","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
@@ -116,7 +116,7 @@
   "MetaData":{
     "IDEVersion":"2024.1400.0.849",
   },
-  "name":"Harmony Framework Plus",
+  "name":"My cool game of awesome",
   "resources":[
     {"id":{"name":"font_console","path":"fonts/font_console/font_console.yy",},},
     {"id":{"name":"Changelogs","path":"notes/Changelogs/Changelogs.yy",},},
