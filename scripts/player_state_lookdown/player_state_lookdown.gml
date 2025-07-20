@@ -1,6 +1,6 @@
 function player_state_lookdown(){
 	//Trigger look down:
-	if(state == ST_NORMAL || state == ST_KNUXFALL)
+	if(state == ST_NORMAL)
 	{
 		if(ground && abs(ground_speed) < 1 && mode = 0 && hold_down)
 		{

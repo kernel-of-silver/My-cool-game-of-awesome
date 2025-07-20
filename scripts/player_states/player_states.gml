@@ -15,23 +15,14 @@ function player_states(){
 	can_roll = false;
 	
 	//Sonic states:
-	player_state_peelout();
-	player_state_dropdash();
+	player_state_spindash();
 	
 	//Tails states:
 	player_state_tailsfly();
 	
-	//Knuckles states:
-	player_state_glide();
-	player_state_wallclimb();
-	player_state_ledgeclimb();
-	player_state_knuxfall();
-	player_state_knuxslide();
-	
 	//Common states:
 	player_state_normal();
 	player_state_jump();
-	player_state_spindash();
 	player_state_roll();
 	player_state_lookdown();
 	player_state_lookup();

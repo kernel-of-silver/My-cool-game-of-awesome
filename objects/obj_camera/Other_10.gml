@@ -42,13 +42,13 @@
 				if(instance_exists(obj_bubble_shield) && obj_bubble_shield.shield_state = 0 || !instance_exists(obj_bubble_shield))
 				{
 					//Scroll camera upwards:
-					if(target.y < target_y && target.ground && target.state != ST_KNUXSLIDE) 
+					if(target.y < target_y && target.ground) 
 					{
 						target_y = max(target_y - min(y_scroll_speed, y_speed), target.y - roll_offset);
 					}
 					
 					//Scroll camera downwards:
-					if(target.y > target_y && target.ground && target.state != ST_KNUXSLIDE) 
+					if(target.y > target_y && target.ground) 
 					{
 						target_y = min(target_y + min(y_scroll_speed, y_speed), target.y - roll_offset);
 					}
@@ -57,7 +57,7 @@
 				//Scroll camera upwards:
 				if(target.y < target_y - 32)
 				{
-					if(!target.ground || target.state = ST_KNUXSLIDE)
+					if(!target.ground)
 					{
 						target_y = max(target_y - y_speed, target.y + 32);
 					}
@@ -66,7 +66,7 @@
 				//Scroll camera downwards:
 				if(target.y > target_y + 32)
 				{
-					if(!target.ground || target.state = ST_KNUXSLIDE)
+					if(!target.ground)
 					{
 						target_y = min(target_y + y_speed, target.y - 32);
 					}
@@ -77,7 +77,7 @@
 			case 1: 
 				//Sonic mania camera
 				//That mania smooth focusing
-				if(!target.ground || target.state = ST_KNUXSLIDE)
+				if(!target.ground)
 				{
 					//Reset the ground offset
 					ground_offset = 32;
@@ -95,7 +95,7 @@
 					}
 				}
 				
-				if(target.ground && target.state != ST_KNUXSLIDE)
+				if(target.ground)
 				{
 					//Ease down the camera offset
 					ground_offset = ground_offset - ground_offset / 8;

@@ -86,13 +86,6 @@ function player_state_normal(){
 				anim = ANIM_WAIT;
 			}
 		break;
-		
-		case CHAR_KNUX:
-			if(idle_timer > 160)
-			{
-				anim = ANIM_WAIT;	
-			}
-		break;
 	}
 	
 	//Ledge animation

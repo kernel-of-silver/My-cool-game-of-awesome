@@ -37,9 +37,3 @@
 		//Draw the player:
 		draw_animator(animator, floor(x), floor(y), image_xscale, 1, image_angle, c_white, 1);
 	}
-	
-	//Draw spindash dust effect
-	if(!global.chaotix_dust_effect && state = ST_SPINDASH && ground)
-	{
-		draw_sprite_ext(spr_effect_spindash, spindash_dust_frames, floor(x) - 2 * facing, floor(y) + hitbox_h + 1, facing, 1, 0, c_white, 1);	
-	}

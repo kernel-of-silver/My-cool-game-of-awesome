@@ -85,9 +85,7 @@
 	
 	//Character specifics:
 	tails_timer = 480;					//Timer used for tails flight
-	knuckles_angle = 90;				//Knuckles' gliding angle
-	glide_speed = 2.5;					//Knuckles' glide speed
-	
+
 	//Visuals:
 	animator = new animator_create();	//Create new animator
 	visual_angle = 0;					//Used for rotation of the player's sprite
@@ -109,7 +107,6 @@
 	[
 		[9, 19],	//Sonic's hitbox
 		[9, 15],	//Tails' hitbox
-		[9, 19]		//Knuckles' hitbox
 	]
 	
 	//Rolling hitbox unique to each character
@@ -117,7 +114,6 @@
 	[
 		[7, 14],	//Sonic's hitbox
 		[7, 14],	//Tails' hitbox
-		[7, 14]		//Knuckles' hitbox
 	]
 	
 	//Camera rolling offset unique to each character

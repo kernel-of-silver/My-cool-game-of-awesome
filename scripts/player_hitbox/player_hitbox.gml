@@ -13,7 +13,7 @@ function player_hitbox(){
 	hitbox_h = hitbox_normal[global.character][1];
 	
 	//Roll hitboxes
-	if(animation_is_playing(animator, ANIM_ROLL) || animation_is_playing(animator, ANIM_DROPDASH) || state == ST_JUMP)
+	if(animation_is_playing(animator, ANIM_ROLL) || state == ST_JUMP || state == ST_SPINDASH)
 	{
 		//Change the camera offset for rolling
 		if(ground || landed)
@@ -24,12 +24,6 @@ function player_hitbox(){
 		//Change the hitbox for rolling animation
 		hitbox_w = hitbox_rolling[global.character][0];
 		hitbox_h = hitbox_rolling[global.character][1];
-	}
-	
-	//Knuckles specific hitboxes
-	if(state == ST_KNUXGLIDE || state == ST_KNUXSLIDE)
-	{
-		hitbox_h = 10;
 	}
 	
 	//Change floor position when jumping or when on ground

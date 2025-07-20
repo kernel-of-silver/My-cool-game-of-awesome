@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"player_state_spindash",
   "parent":{
-    "name":"Common States",
-    "path":"folders/Scripts/Player Scripts/States/Common States.yy",
+    "name":"Sonic States",
+    "path":"folders/Scripts/Player Scripts/States/Sonic States.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
